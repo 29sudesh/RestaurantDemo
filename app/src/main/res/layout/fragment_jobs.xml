@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_topbar"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/_15sdp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:text="@string/need_to_get"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/_16sdp"
+                android:gravity="start"
+                android:layout_gravity="start"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:text="@string/delievery_details"/>
+
+            <EditText
+                android:id="@+id/et_pickup_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:maxLines="3"
+                android:hint="@string/pickup_from"/>
+
+            <EditText
+                android:id="@+id/et_drop_off_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:imeOptions="actionNext"
+                android:hint="@string/drop_off_to"/>
+
+            <EditText
+                android:id="@+id/et_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:imeOptions="actionNext"
+                android:textColor="@color/black"
+                android:hint="@string/instruction"/>
+
+
+            <EditText
+                android:id="@+id/et_time_and_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:hint="@string/time_and_date"/>
+
+            <EditText
+                android:id="@+id/et_drop_off_package_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:imeOptions="actionNext"
+                android:hint="@string/drop_off_package_address"/>
+
+
+            <EditText
+                android:id="@+id/et_your_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:hint="@string/your_name"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="@string/add_to_basket"
+                android:background="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

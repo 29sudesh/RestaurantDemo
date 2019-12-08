@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_topbar"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_15sdp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:text="@string/buy_anything"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="start"
+            android:layout_gravity="start"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:text="@string/pick_up_and_delievery_address"/>
+
+        <EditText
+            android:id="@+id/et_where_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:maxLines="3"
+            android:hint="@string/where_from"/>
+
+        <EditText
+            android:id="@+id/et_delievery_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:imeOptions="actionNext"
+            android:hint="@string/delievery_to"/>
+
+        <EditText
+            android:id="@+id/et_what_you_want"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:imeOptions="actionNext"
+            android:textColor="@color/black"
+            android:hint="@string/what_you_want"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="start"
+            android:layout_gravity="start"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/send_a_package"/>
+
+        <EditText
+            android:id="@+id/et_picup_package_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:hint="@string/pickup_package_from"/>
+
+        <EditText
+            android:id="@+id/et_drop_off_package_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:imeOptions="actionNext"
+            android:hint="@string/drop_off_package_address"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="start"
+            android:layout_gravity="start"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/start_time_and_date"/>
+
+        <EditText
+            android:id="@+id/et_start_time_and_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:hint="@string/time_and_date"/>
+
+
+        <EditText
+            android:id="@+id/et_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:hint="@string/your_contact_number"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:text="@string/add_to_basket"
+            android:background="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
